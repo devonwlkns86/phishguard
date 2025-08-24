@@ -1,12 +1,33 @@
-# React + Vite
+Author · Devon Wilkins
+Aspiring SOC Analyst · Blue Team Enthusiast · Cybersecurity Learner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🛡️ PhishGuard — Suspicious Email Triage Tool
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PhishGuard is a Blue Team–focused web app that helps analysts quickly triage suspicious emails.  
+Built with **React + Tailwind CSS (v4)**, it provides a clean interface to paste raw email headers and body content, and instantly see key indicators.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Current Features
+- Paste raw **SMTP headers** and email body
+- Responsive, dark-themed UI built with TailwindCSS
+- Automatic extraction of URLs from the message body
+- Quick indicators:
+  - SPF / DKIM / DMARC results
+  - From vs Return-Path mismatch
+- Risk score (0–100) with colored progress bar
+- Copy-to-clipboard analyst summary
+- Reset button to clear inputs
+
+---
+
+## 🚀 Getting Started
+
+Clone and run locally:
+
+```bash
+git clone https://github.com/devonwlkns86/phishguard.git
+cd phishguard
+npm install
+npm run dev
